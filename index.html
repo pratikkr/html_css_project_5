@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <nav class="nav" id="home">
+            <a href="#home">Home</a>
+            <a href="#projects">Project</a>
+            <a href="">image</a>
+            <a href="#contact">contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+    </nav> -->
+    <div class="nav" id="home">
+        <a href="#main" class="active">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#image">Images</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <div class="main" id="main">
+        <div class="right">
+            <p class="firstline"><span><img src="assets/waving-hand.png" alt=""></span>Hi Everyone</p>
+            <p class="secondline">Pratik Kumar</p>
+            <p class="thirdline">developer</p>
+        <!-- <img src="assets/pc-image.png" alt="pc-image" class="pcimage"> -->
+        </div>
+        <div class="left">
+            <img src="assets/pc-image.png" alt="pc-image" class="pcimage">
+        </div>
+    </div>
+    <div class="project" id="project">
+        <h4>Projects</h4>
+        <div class="container">
+            <div class="top">
+                <div class="card card1"><img src="assets/image.png" alt="image" > <br>
+                </div>
+                <br><span>Project 1</span>
+                <div class="card card2"><img src="assets/image.png" alt="image" ></div><br><span>Project 2</span>
+            </div>
+            <div class="bottom">
+                <div class="card card3"><img src="assets/image.png" alt="image" ></div><br><span>Project 3</span>
+            <div class="card card4"><img src="assets/image.png" alt="image" ></div><br><span>Project 4</span>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h4>Contact Me</h4>
+        <div class="contact_icon">
+            <p><i class="fa-brands fa-github"></i></p>
+        <p><i class="fa-brands fa-linkedin"></i></p>
+        <p><i class="fa-solid fa-envelopes-bulk"></i></p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("home");
+          if (x.className === "nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+        </script>
+</body>
+</html>
